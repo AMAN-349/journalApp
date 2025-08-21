@@ -15,6 +15,7 @@
 	<description>E2EE Journal App</description>
 	<properties>
 		<java.version>1.8</java.version>
+        <sonar.organization>engineer-digest-aman</sonar.organization>
 	</properties>
 	<dependencies>
 		<dependency>
