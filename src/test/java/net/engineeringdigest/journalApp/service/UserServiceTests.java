@@ -9,8 +9,10 @@ import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.FilterType;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.test.context.ActiveProfiles;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -19,6 +21,9 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @ActiveProfiles("dev") //here dev config runs
 @SpringBootTest
 public class UserServiceTests {
+
+    @MockBean
+    private JavaMailSender javaMailSender;
 
     @Autowired
     private UserRepository userRepository;
