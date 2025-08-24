@@ -27,8 +27,8 @@ public class UserScheduler {
 //    @Autowired
 //    private UserRepositoryImpl userRepository;
 
-    @Autowired
-    private AppCache appCache;
+//    @Autowired
+//    private AppCache appCache;
 
     //@Scheduled(cron = "0 0 9 * * SUN")   //now this method runs self based on cron expression
     public void fetchUsersAndSendSaMail()
@@ -67,7 +67,7 @@ public class UserScheduler {
     //@Scheduled(cron = "0 0/10 * ? * *")   //runs in every 10 min
     public void clearAppCache()
     {
-        appCache.init();
+//        appCache.init();
     }
 
 }
