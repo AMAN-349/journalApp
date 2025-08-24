@@ -4,10 +4,11 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
 
-@SpringBootTest
+@DataMongoTest
 public class UserRepositoryImplTests {
 
     @Autowired
@@ -16,7 +17,7 @@ public class UserRepositoryImplTests {
     @Test
     public void testSaveNewUser()
     {
-        //Assertions.assertNotNull(userRepository.getUserForSA());
+        Assertions.assertNotNull(userRepository.getUserForSA());
     }
 
 }
