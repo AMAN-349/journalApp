@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.Map;
 
 @Component
-@ConditionalOnProperty(name = "app_cache_enabled", havingValue = "true", matchIfMissing = true)
 public class AppCache {
 
     public enum keys{

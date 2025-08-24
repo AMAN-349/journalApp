@@ -34,5 +34,4 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
-          app_cache_enabled: false
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=engineer-digest-aman_journalapp
