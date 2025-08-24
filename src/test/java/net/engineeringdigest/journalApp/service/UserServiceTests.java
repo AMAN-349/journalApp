@@ -18,9 +18,6 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @ActiveProfiles("dev") //here dev config runs
 @SpringBootTest
-@ComponentScan(excludeFilters = @ComponentScan.Filter(
-        type = FilterType.ASSIGNABLE_TYPE,
-        classes = AppCache.class))
 public class UserServiceTests {
 
     @Autowired

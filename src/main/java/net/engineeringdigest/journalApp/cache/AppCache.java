@@ -17,12 +17,12 @@ public class AppCache {
         WEATHER_API;
     }
 
-    public Map<String,String> appCache;
+    public Map<String,String> appCache=new HashMap<>();;
 
     @Autowired
     private ConfigJournalAppRepository configJournalAppRepository;
 
-    @PostConstruct  //this method immediately calls as bean created for this class
+    //@PostConstruct  //this method immediately calls as bean created for this class
     public void init()
     {
         appCache =new HashMap<>();
