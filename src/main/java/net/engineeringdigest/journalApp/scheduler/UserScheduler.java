@@ -21,11 +21,11 @@ import java.util.stream.Collectors;
 @Component
 public class UserScheduler {
 
-    @Autowired
-    private EmailService emailService;
+//    @Autowired
+//    private EmailService emailService;
 
-    //@Autowired
-    //private UserRepositoryImpl userRepository;
+//    @Autowired
+//    private UserRepositoryImpl userRepository;
 
     @Autowired
     private AppCache appCache;
